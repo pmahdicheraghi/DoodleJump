@@ -126,6 +126,7 @@ Object* object_creator(string name, int width, int height)
 		Object* enemy = new Enemy(width, height);
 		return enemy;
 	}
+	return nullptr;
 }
 
 vector<Object*> read_objects_from_file(string file_name = "static//map.txt")
